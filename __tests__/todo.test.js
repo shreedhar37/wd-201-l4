@@ -41,8 +41,8 @@ describe("Todo List Test Suite", () => {
       dueDate: new Date().toLocaleDateString("en-CA"),
     });
     expect(all.length).toBe(3);
-    dueTodayItems = dueToday().filter((item) => item.completed === false);
-    expect(dueTodayItems.length).toBe(1);
+    dueTodayItems = dueToday();
+    expect(dueTodayItems.length).toBe(2);
   });
   test("Should return due later items", () => {
     expect(all.length).toEqual(3);
